@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quick Tip</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main id="container">
+        <h1>Quick Tip</h1>
+        <section id="sectionBill">
+
+            <!-- Bill Amount -->
+            <div class="bill">
+                <label for="billAmount">Bill</label>
+                <input type="number" placeholder="Your Bill" id="billAmount">
+            </div>
+
+            <!-- Tip Scroll -->
+            <div>
+                <div class="space-between">
+                    <label for="tipAmount">Select Tip</label>
+                    <span id="tipPercent"></span>
+                </div>
+                <input type="range" name="tip" id="tipAmount" min="0" max="100"  class="range">
+            </div>
+
+            <!-- Til Value -->
+            <div class="space-between">
+                <span>Tip</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr/>
+            <!-- Total Bill -->
+            <div class="space-between totalx">
+                <span class="totalx">Total Bill</span>
+                <span class="totalx" id="totalBill"></span>
+            </div>
+        </section>
+
+        <section id="billSplitCal">
+            <!-- Split Bill By  -->
+            <div>
+                <div class="space-between">
+                    <label for="splitBy">Split</label>
+                    <span id="SplitPerson"></span>
+                </div>
+                <input type="range" id="splitBy" min="1" max="10" class="range">
+            </div>
+            <!-- Bill each -->
+            <div class="space-between">
+                <span>Bill Each</span>
+                <span id="billEach"></span>
+            </div>
+            <!-- Tip Each -->
+            <div class="space-between">
+                <span>Tip Each</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+    </main>
+    <script src="JS/script.js"></script>
+</body>
+</html>
